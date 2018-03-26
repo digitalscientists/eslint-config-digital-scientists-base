@@ -5,8 +5,6 @@ module.exports = {
 
   plugins: [],
 
-  parser: "babel-eslint",
-
   rules: {
     // http://eslint.org/docs/rules/
 
