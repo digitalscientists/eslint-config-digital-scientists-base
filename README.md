@@ -1,4 +1,4 @@
-# eslint-config-digital-scientists
+# eslint-config-digital-scientists-base
 
 An ESLint [Shareable Config](http://eslint.org/docs/developer-guide/shareable-configs) for vanilla JS (up to ES2018) projects at [Digital Scientists](http://www.digitalscientists.com/).
 
