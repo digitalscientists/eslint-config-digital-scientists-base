@@ -240,7 +240,7 @@ module.exports = {
     semi: [0, 'always'], // require or disallow semicolons instead of ASI
     'semi-spacing': 0, // enforce consistent spacing before and after semicolons
     'sort-keys': [
-      'error',
+      'warn',
       'asc',
       {
         caseSensitive: false,
