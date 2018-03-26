@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-digital-scientists-base",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -8,8 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url":
-      "https://github.com/digitalscientists/eslint-config-digital-scientists-base"
+    "url": "https://github.com/digitalscientists/eslint-config-digital-scientists-base"
   },
   "keywords": [
     "eslint",
@@ -19,15 +18,12 @@
     "lint",
     "digital scientists"
   ],
-  "author":
-    "Derric Beining <derrick.beining@gmail.com> (https://github.com/derrickbeining)",
+  "author": "Derric Beining <derrick.beining@gmail.com> (https://github.com/derrickbeining)",
   "license": "MIT",
   "bugs": {
-    "url":
-      "https://github.com/digitalscientists/eslint-config-digital-scientists-base/issues"
+    "url": "https://github.com/digitalscientists/eslint-config-digital-scientists-base/issues"
   },
-  "homepage":
-    "https://github.com/digitalscientists/eslint-config-digital-scientists-base",
+  "homepage": "https://github.com/digitalscientists/eslint-config-digital-scientists-base",
   "devDependencies": {
     "chai": "^3.5.0",
     "eslint": "^4.19.1",
