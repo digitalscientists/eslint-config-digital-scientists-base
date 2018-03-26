@@ -1,13 +1,13 @@
 # eslint-config-digital-scientists
 
-An ESLint [Shareable Config](http://eslint.org/docs/developer-guide/shareable-configs) for JS and React (and React Native) projects at [Digital Scientists](http://www.digitalscientists.com/).
+An ESLint [Shareable Config](http://eslint.org/docs/developer-guide/shareable-configs) for vanilla JS (up to ES2018) projects at [Digital Scientists](http://www.digitalscientists.com/).
 
 ## Installation
 
 It's recommended to always install linting/formatting engines and configs **locally**, since supported rules and config specifics can change over time and may cause inconsistencies across projects if installed globally and updated over time.
 
 ```sh
-npm install --save-dev --save-exact eslint eslint-config-digital-scientists
+npm install --save-dev --save-exact eslint eslint-config-digital-scientists-base
 ```
 
 ## Usage
@@ -16,7 +16,7 @@ In your local `.eslintrc.{js,json}` file:
 
 ```json
 {
-  "extends": "digital-scientists",
+  "extends": "digital-scientists-base",
   "root": true
 }
 ```
@@ -25,18 +25,6 @@ _Note:_
 
 * the `eslint-config-` portion of the module name is assumed by ESLint.
 * the `root` attribute prevents ESLint from merging local rules with any global configs you may have installed.
-
-### Optional React Native rules
-
-To add a few `react-native`-specific rules, just add this additional extension to your `.eslintrc` `extends` property list:
-
-```json
-{
-  "extends": ["digital-scientists", "digital-scientists/react-native"],
-
-  "root": true
-}
-```
 
 ## Integrating ESLint with your editor
 
@@ -62,7 +50,7 @@ Modify `.eslintrc.{js,json}` to extend `eslint-config-pretter` **after** `eslint
 
 ```json
 {
-  "extends": ["digital-scientists", "prettier", "prettier/react"],
+  "extends": ["digital-scientists-base", "prettier"],
   "root": true
 }
 ```
@@ -73,7 +61,6 @@ Add a `prettier` config (e.g. `.prettierrc.js`) with these recommended settings:
 module.exports = {
   arrowParens: "always",
   bracketSpacing: false,
-  jsxBracketSameLine: false,
   printWidth: 80,
   singleQuote: true,
   semi: false,
@@ -101,7 +88,7 @@ npm install babel-eslint --save-dev
 ```json
 {
   "parser": "babel-eslint",
-  "extends": "digital-scientists",
+  "extends": "digital-scientists-base",
   "root": true
 }
 ```
@@ -112,7 +99,7 @@ Any [rules](http://eslint.org/docs/rules/) added to your global or local `.eslin
 
 ```json
 {
-  "extends": "digital-scientists",
+  "extends": "digital-scientists-base",
   "rules": {
     "semi": [1, "always"]
   }
