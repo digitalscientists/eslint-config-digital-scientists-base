@@ -23,7 +23,7 @@ module.exports = {
     2,
     { SwitchCase: 1, VariableDeclarator: { var: 2, let: 2, const: 3 } },
   ], // enforce consistent indentation
-  "jsx-quotes": [2, "prefer-double"], // enforce the consistent use of either double or single quotes in JSX attributes
+  "jsx-quotes": [0, "prefer-double"], // enforce the consistent use of either double or single quotes in JSX attributes
   "key-spacing": [1, { mode: "minimum" }], // enforce consistent spacing between keys and values in object literal properties
   "keyword-spacing": 1, // enforce consistent spacing before and after keywords
   "line-comment-position": 0, // enforce position of line comments
@@ -81,7 +81,7 @@ module.exports = {
   "operator-linebreak": 0, // enforce consistent linebreak style for operators
   "padded-blocks": 0, // require or disallow padding within blocks
   "quote-props": [1, "as-needed"], // require quotes around object literal property names
-  quotes: [1, "double", { avoidEscape: true, allowTemplateLiterals: true }], // enforce the consistent use of either backticks, double, or single quotes
+  quotes: [0, "double", { avoidEscape: true, allowTemplateLiterals: true }], // enforce the consistent use of either backticks, double, or single quotes
   "require-jsdoc": 0, // require JSDoc comments
   semi: [0, "always"], // require or disallow semicolons instead of ASI
   "semi-spacing": 0, // enforce consistent spacing before and after semicolons

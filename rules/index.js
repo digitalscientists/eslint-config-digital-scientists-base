@@ -13,4 +13,7 @@ module.exports = [
       subRules[ruleName] = config[ruleName];
       return subRules;
     }, rules);
-  }, {});
+  }, {})
+  .map(rules => {
+    rules: rules;
+  });

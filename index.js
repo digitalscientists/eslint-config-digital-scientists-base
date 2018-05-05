@@ -1,7 +1,16 @@
 "use strict";
+const cosmiconfig = require("cosmiconfig");
+const prettierrc = cosmiconfig("prettier").searchSync();
 
-module.exports = {
-  extends: ["eslint:recommended"],
+const withPrettier = eslintConfig => {
+  eslintConfig.extends.push("plugin:prettier/recommended");
+  eslintConfig.plugins.push("prettier");
+  eslintConfig.rules["prettier/prettier"] = ["error", prettierrc.config];
+  return eslintConfig;
+};
+
+const eslintConfig = {
+  extends: ["eslint:recommended", require.resolve("./rules")],
 
   env: {
     es6: true,
@@ -20,5 +29,9 @@ module.exports = {
     ecmaVersion: 2018,
   },
 
-  rules: require("./rules"),
+  plugins: [],
+
+  rules: {},
 };
+
+module.exports = prettierrc ? withPrettier(eslintConfig) : eslintConfig;
