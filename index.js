@@ -20,5 +20,5 @@ module.exports = {
     ecmaVersion: 2018,
   },
 
-  rules: Object.keys(require("./rules")).length,
+  rules: require("./rules"),
 };
