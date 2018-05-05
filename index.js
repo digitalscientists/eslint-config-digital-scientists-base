@@ -1,7 +1,7 @@
 "use strict";
 
 module.exports = {
-  extends: ["./base"].map(require.resolve),
+  extends: ["eslint:recommended", "./rules"].map(require.resolve),
 
   env: {
     es6: true,
@@ -9,14 +9,14 @@ module.exports = {
     node: true,
     mocha: true,
     jasmine: true,
-    jest: true
+    jest: true,
   },
 
   parserOptions: {
-    ecmaVersion: 2018
+    ecmaVersion: 2018,
   },
 
   globals: {
-    angular: true
-  }
+    angular: true,
+  },
 };
