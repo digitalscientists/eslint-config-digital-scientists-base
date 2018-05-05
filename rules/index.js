@@ -8,12 +8,10 @@ module.exports = [
   .map(function(path) {
     return require(path);
   })
-  .reduce(function(rules, config) {
-    return Object.keys(config).reduce(function(subRules, ruleName) {
-      subRules[ruleName] = config[ruleName];
-      return subRules;
-    }, rules);
-  }, {})
-  .map(rules => {
-    rules: rules;
-  });
+  .reduce(
+    function(config, rules) {
+      Object.assign(config.rules, rules);
+      return config;
+    },
+    { rules: {} }
+  );
