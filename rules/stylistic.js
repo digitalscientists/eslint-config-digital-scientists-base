@@ -81,7 +81,7 @@ module.exports = {
   "operator-linebreak": 0, // enforce consistent linebreak style for operators
   "padded-blocks": 0, // require or disallow padding within blocks
   "quote-props": [1, "as-needed"], // require quotes around object literal property names
-  quotes: [1, "single", { avoidEscape: true, allowTemplateLiterals: true }], // enforce the consistent use of either backticks, double, or single quotes
+  quotes: [1, "double", { avoidEscape: true, allowTemplateLiterals: true }], // enforce the consistent use of either backticks, double, or single quotes
   "require-jsdoc": 0, // require JSDoc comments
   semi: [0, "always"], // require or disallow semicolons instead of ASI
   "semi-spacing": 0, // enforce consistent spacing before and after semicolons

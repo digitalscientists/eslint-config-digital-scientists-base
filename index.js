@@ -1,7 +1,7 @@
 "use strict";
 
 module.exports = {
-  extends: ["eslint:recommended", "./rules"].map(require.resolve),
+  extends: ["eslint:recommended"],
 
   env: {
     es6: true,
@@ -12,11 +12,13 @@ module.exports = {
     jest: true,
   },
 
+  globals: {
+    angular: true,
+  },
+
   parserOptions: {
     ecmaVersion: 2018,
   },
 
-  globals: {
-    angular: true,
-  },
+  rules: Object.keys(require("./rules")).length,
 };
