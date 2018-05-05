@@ -61,13 +61,14 @@ Add a `prettier` config (e.g. `.prettierrc.js`) with these recommended settings:
 module.exports = {
   arrowParens: "always",
   bracketSpacing: false,
+  jsxBracketSameLine: false,
   printWidth: 80,
-  singleQuote: true,
-  semi: false,
+  singleQuote: false,
+  semi: true,
   tabWidth: 2,
   trailingComma: "es5",
   useTabs: false,
-  proseWrap: "always"
+  proseWrap: "always",
 };
 ```
 
