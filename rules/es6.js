@@ -26,7 +26,7 @@ module.exports = {
   "prefer-spread": 0, // require spread operators instead of `.apply()`
   "prefer-template": 0, // require template literals instead of string concatenation
   "require-yield": 2, // require generator functions to contain `yield`
-  "sort-imports": 1, // enforce sorted import declarations within modules
+  "sort-imports": 0, // enforce sorted import declarations within modules
   "symbol-description": 1, // require symbol descriptions
   "template-curly-spacing": [2, "never"], // require or disallow spacing around embedded expressions of template strings
   "yield-star-spacing": 1, // require or disallow spacing around the `*` in `yield*` expressions
