@@ -5,7 +5,7 @@ const prettierrc = cosmiconfig("prettier").searchSync();
 const withPrettier = eslintConfig => {
   eslintConfig.extends.push("plugin:prettier/recommended");
   eslintConfig.plugins.push("prettier");
-  eslintConfig.rules["prettier/prettier"] = ["error", prettierrc.config];
+  eslintConfig.rules["prettier/prettier"] = ["error"];
   return eslintConfig;
 };
 
