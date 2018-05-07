@@ -58,7 +58,7 @@ module.exports = {
   "no-mixed-operators": 0, // disallow mixes of different operators
   "no-mixed-spaces-and-tabs": [1, "smart-tabs"], // disallow mixed spaces and tabs for indentation
   "no-multi-assign": 1, // disallow use of chained assignment expressions
-  "no-multiple-empty-lines": [1, { max: 2, maxEOF: 1 }], // disallow multiple empty lines
+  "no-multiple-empty-lines": [1, { max: 1, maxEOF: 1 }], // disallow multiple empty lines
   "no-negated-condition": 0, // disallow negated conditions
   "no-nested-ternary": 1, // disallow nested ternary expressions
   "no-new-object": 0, // disallow `Object` constructors
