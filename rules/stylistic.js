@@ -2,7 +2,7 @@ module.exports = {
   "array-bracket-spacing": 0, // enforce consistent spacing inside array brackets
   "block-spacing": 0, // enforce consistent spacing inside single-line blocks
   "brace-style": 0, // enforce consistent brace style for blocks
-  camelcase: 1, // enforce camelcase naming convention
+  camelcase: [1, { properties: "never" }], // enforce camelcase naming convention
   "capitalized-comments": 0, // enforce or disallow capitalization of the first letter of a comment
   "comma-dangle": [2, "always-multiline"], // require or disallow trailing commas
   "comma-spacing": 1, // enforce consistent spacing before and after commas
