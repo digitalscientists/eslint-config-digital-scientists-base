@@ -45,7 +45,7 @@ const eslintConfig = {
     "import/no-duplicates": 2,
     "import/no-namespace": 1,
     "import/extensions": [
-      2,
+      0,
       "always",
       {
         js: "never",
