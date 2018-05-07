@@ -36,6 +36,7 @@ const eslintConfig = {
   plugins: ["import", "no-loops", "promise"],
 
   rules: {
+    "import/no-unresolved": 0,
     "import/no-dynamic-require": 0,
     "import/no-commonjs": 0,
     "import/no-nodejs-modules": 0,
@@ -59,7 +60,7 @@ const eslintConfig = {
         "newlines-between": "always",
       },
     ],
-    "import/newline-after-import": [1, { count: 2 }],
+    "import/newline-after-import": [1, { count: 1 }],
     "import/prefer-default-export": 0,
     "import/max-dependencies": 0,
     "import/no-unassigned-import": 1,
